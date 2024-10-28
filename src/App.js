@@ -4,6 +4,8 @@ import './App.css';
 import Home from './components/Home/Home';
 import Jewelry from './components/Jewelry/Jewelry';
 import Electronics from './components/Electronics/Electronics';
+import Books from './components/Books/Books';
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/jewelry">Jewelry</Link></li>
             <li><Link to="/electronics">Electronics</Link></li>
+            <li><Link to="/books">Books</Link></li>
+
           </ul>
         </nav>
 
@@ -23,6 +27,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Jewelry" element={<Jewelry />} />
           <Route path="/Electronics" element={<Electronics />} />
+          <Route path="/Books" element={<Books />} />
+
         </Routes>
       </div>
     </Router>
