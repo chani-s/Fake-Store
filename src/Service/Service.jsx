@@ -8,7 +8,6 @@ export default function Service({ category }) {
     const [loading, setLoading] = useState(true);
     const categoryLowerCase = category.toLowerCase();
     let url = `https://fakestoreapi.com/products/category/${categoryLowerCase}`;
-
     if(category === "Books") {
         url = "http://localhost:3000/";
     }
@@ -26,7 +25,7 @@ export default function Service({ category }) {
                 })
                 .then((json) => {
                     setProducts(json);
-                    updateFetchTimeAndData(category, json); // עדכון זמן ונתונים ב-localStorage
+                    updateFetchTimeAndData(category, json); 
                     setLoading(false);
                 })
                 .catch((error) => {
@@ -34,7 +33,6 @@ export default function Service({ category }) {
                     setLoading(false);
                 });
         } else {
-            // שימוש בנתונים השמורים
             const storedData = getStoredData(category);
             if (storedData) {
                 setProducts(storedData);

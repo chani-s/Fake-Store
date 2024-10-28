@@ -13,13 +13,13 @@ function App() {
       <div>
         {/* Navigation Links */}
         <nav className='header'>
-          <ul className='header-links'>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/jewelry">Jewelry</Link></li>
-            <li><Link to="/electronics">Electronics</Link></li>
-            <li><Link to="/books">Books</Link></li>
+          <div className='header-links'>
+            <Link className='link' to="/">Home</Link>
+            <Link className='link' to="/jewelry">Jewelry</Link>
+            <Link className='link' to="/electronics">Electronics</Link>
+            <Link className='link' to="/books">Books</Link>
 
-          </ul>
+          </div>
         </nav>
 
         {/* Routes */}
