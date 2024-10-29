@@ -13,7 +13,7 @@
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* רוחב מקסימלי לכרטיס */
+    max-width: 300px; 
     margin: 0 auto; /* למרכז את הכרטיס */
   }
   
